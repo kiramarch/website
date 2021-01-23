@@ -60,3 +60,27 @@ $i < 10;
     $i++;
 ) {
 }
+
+if (
+    foo(
+            'this
+            is a
+            string',
+            <<<EOD
+foobar!
+EOD
+        )
+) {
+    return;
+}
+
+    if (
+        isset($foo) === true
+        && $bar > $foo
+        /*
+         * A multi-line comment.
+         */
+        && $foo === true
+    ) {
+        break;
+    }

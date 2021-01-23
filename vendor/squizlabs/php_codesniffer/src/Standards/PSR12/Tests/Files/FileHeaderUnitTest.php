@@ -31,10 +31,11 @@ class FileHeaderUnitTest extends AbstractSniffUnitTest
         case 'FileHeaderUnitTest.2.inc':
             return [
                 1  => 1,
-                8  => 1,
-                19 => 1,
-                21 => 1,
-                25 => 1,
+                6  => 1,
+                7  => 1,
+                18 => 1,
+                20 => 1,
+                24 => 1,
             ];
         case 'FileHeaderUnitTest.3.inc':
             return [
@@ -50,6 +51,12 @@ class FileHeaderUnitTest extends AbstractSniffUnitTest
             ];
         case 'FileHeaderUnitTest.5.inc':
             return [4 => 1];
+        case 'FileHeaderUnitTest.7.inc':
+        case 'FileHeaderUnitTest.10.inc':
+        case 'FileHeaderUnitTest.11.inc':
+            return [1 => 1];
+        case 'FileHeaderUnitTest.12.inc':
+            return [4 => 2];
         default:
             return [];
         }//end switch

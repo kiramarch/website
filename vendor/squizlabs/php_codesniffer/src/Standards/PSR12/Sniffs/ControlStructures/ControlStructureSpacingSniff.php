@@ -9,10 +9,10 @@
 
 namespace PHP_CodeSniffer\Standards\PSR12\Sniffs\ControlStructures;
 
-use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Files\File;
-use PHP_CodeSniffer\Util\Tokens;
+use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Standards\PSR2\Sniffs\ControlStructures\ControlStructureSpacingSniff as PSR2Spacing;
+use PHP_CodeSniffer\Util\Tokens;
 
 class ControlStructureSpacingSniff implements Sniff
 {
@@ -95,12 +95,20 @@ class ControlStructureSpacingSniff implements Sniff
         for ($i = $parenOpener; $i < $parenCloser; $i++) {
             if ($tokens[$i]['column'] !== 1
                 || $tokens[($i + 1)]['line'] > $tokens[$i]['line']
+                || isset(Tokens::$commentTokens[$tokens[$i]['code']]) === true
             ) {
                 continue;
             }
 
             if (($i + 1) === $parenCloser) {
                 break;
+            }
+
+            // Leave indentation inside multi-line strings.
+            if (isset(Tokens::$textStringTokens[$tokens[$i]['code']]) === true
+                || isset(Tokens::$heredocTokens[$tokens[$i]['code']]) === true
+            ) {
+                continue;
             }
 
             if ($tokens[$i]['code'] !== T_WHITESPACE) {
@@ -138,7 +146,7 @@ class ControlStructureSpacingSniff implements Sniff
                 } else {
                     $phpcsFile->fixer->beginChangeset();
                     for ($i = ($prev + 1); $i < $parenCloser; $i++) {
-                        // Maintian existing newline.
+                        // Maintain existing newline.
                         if ($tokens[$i]['line'] === $tokens[$prev]['line']) {
                             continue;
                         }
