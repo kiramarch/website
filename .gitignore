@@ -1,0 +1,17 @@
+# gitignore template for Drupal 8 projects
+# added via github to try to get windows to see it
+
+# Ignore configuration files that may contain sensitive information
+/sites/*/*settings*.php
+/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+# (not worried)
+
+# Ignore paths that may contain temporary files
+/sites/*/translations
+/sites/*/tmp
+/sites/*/cache
+
+# Ignore drupal core (if not versioning drupal sources)
+# (will version core, too)
