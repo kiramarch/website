@@ -3,17 +3,17 @@
 
 # Ignore configuration files that may contain sensitive information
 # added middle line to make sure it really does pick up the main settings.php file
-sites/*/*settings*.php
-sites/default/*settings*.php
-sites/*/*services*.yml
+web/sites/*/*settings*.php
+web/sites/default/*settings*.php
+web/sites/*/*services*.yml
 
 # Ignore paths that may contain user-generated content
 # (not worried)
 
 # Ignore paths that may contain temporary files
-sites/*/translations
-sites/*/tmp
-sites/*/cache
+web/sites/*/translations
+web/sites/*/tmp
+web/sites/*/cache
 
 # Ignore drupal core (if not versioning drupal sources)
 # (will version core, too)
