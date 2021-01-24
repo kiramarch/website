@@ -13,4 +13,4 @@
  * @see core/modules/statistics/statistics.php
  */
 
-return require __DIR__ . '/../../../../MAMP/htdocs/hub_site/vendor/autoload.php';
+return require __DIR__ . '/../vendor/autoload.php';
