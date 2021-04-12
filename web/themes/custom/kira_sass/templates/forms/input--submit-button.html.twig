@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Theme override for an 'input' #type form element.
+ *
+ * Available variables:
+ * - attributes: A list of HTML attributes for the input element.
+ * - children: Optional additional rendered elements.
+ *
+ * @see template_preprocess_input()
+ */
+#}
+
+{% if attributes.id == "edit-submit" %}
+  {% if  page_type == "contact" %}
+    <button{{ attributes }}>{{ 'Send message' | raw }}</button>{{ children }}
+  {% else %}
+    <button{{ attributes }}>{{ 'Post' | raw }}</button>{{ children }}
+  {% endif %}
+{% elseif attributes.id == "edit-preview" %}
+{% else %}
+  <button{{ attributes }}>{{ safe_value_label | raw }}</button>{{ children }}
+{% endif %}

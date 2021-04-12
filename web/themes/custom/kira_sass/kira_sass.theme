@@ -30,3 +30,26 @@ function kira_sass_form_system_theme_settings_alter(&$form, FormStateInterface $
     'bg-transparent' => t('Transparent'),
   );
 }
+
+function kira_sass_preprocess_page(array &$variables) {
+
+  // Load the site name out of configuration.
+  $variables['site_name'] = 'default';
+  $config = \Drupal::config('system.site');
+  $variables['site_name'] = $config->get('name');
+
+}
+
+function kira_sass_preprocess_form_element (array &$variables) {
+  $variables['description']['content'] = 'Your address won\'t be displayed.';
+}
+
+function kira_sass_preprocess_input (array &$variables) {
+  $variables['page_type'] = NULL;
+  $current_path = \Drupal::service('path.current')->getPath();
+  if (strpos($current_path, 'contact') !== false) {
+    $variables['page_type'] = 'contact';  
+  }
+   
+}
+

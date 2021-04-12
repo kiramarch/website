@@ -9989,6 +9989,16 @@ h3 {
     border-color: #dee2e6;
   }
 }
+/* DRUPAL CLASSES */
+/* a file specifically to style specific drupal elements that I can't style other ways */
+#edit-comment-body-0-format-help {
+  display: none;
+}
+
+#content div.inline__links {
+  display: none;
+}
+
 /* MIXINS */
 .btn-primary a {
   color: #fff;
