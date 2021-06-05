@@ -1,4 +1,4 @@
-global-styling:
+base:
   version: VERSION
   js: 
     js/popper.min.js: {}
@@ -8,8 +8,11 @@ global-styling:
   css:
     component:
       css/style.css: {}
+    theme:
+      /themes/bootstrap_barrio/css/print.css: { media:print }
   dependencies:
     - core/jquery
+    - core/jquery.once
     - core/drupal
 
 bootstrap_cdn:

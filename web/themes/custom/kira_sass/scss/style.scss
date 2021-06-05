@@ -11,21 +11,47 @@ Description: Bootstrap 4 with Sass
 
 body {
     background: $white;
+	padding-top: 70px;
 }
+
+p, li {
+	letter-spacing: .0065em;	
+	}
+	
+#site-logo {
+    width: 200px;
+	height: 90px;
+    }
+
+@include media-breakpoint-down(xs) {
+    #site-logo {
+        width: 90px;
+	    height: 90px;
+        }
+
+    }
+
+
+	
 
 /* COLORS 
 --------------------------------------------------*/
 
 a {
-    color: $accent-shade;
+	color: $primary-dark;
 }
+
+a:hover {
+	color: $primary-shade;
+}
+
 
 .bg-inverse {
     background: $primary-shade !important;
 }
 
 .site-footer {
-    background: $accent-shade !important;
+
 }
 
 .menu--main li a {
@@ -36,9 +62,17 @@ a {
     color: $primary-shade;
 }
 
+.btn-primary:hover {
+    color: $white;
+}
+
+
 .site-name-slogan a {
     text-decoration: none;
 }
+
+/* CARDS and CAROUSELS 
+--------------------------------------------------*/
 
 .card-group img {
     margin: 0;
@@ -56,4 +90,12 @@ a {
 
 .slick>div {
     margin: 0 15px;
+}
+
+
+/* NAV FUNCTIONS
+--------------------------------------------------*/
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
 }

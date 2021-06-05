@@ -17,8 +17,8 @@
 //material design bootstrap
 //@import "../node_modules/mdbootstrap/scss/mdb-free.scss";
 
-// mixins
-@import "mixins";
+// mixins (moved to overrides file)
+// @import "mixins";
 
 // drupal classes
 @import "drupalclasses";
@@ -27,4 +27,4 @@
 //@import "../../../contrib/bootstrap_barrio/scss/barrio.scss";
 
 // barrio overrides
-@import "barrio-overrides.scss";
+// @import "barrio-overrides.scss";

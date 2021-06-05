@@ -7,8 +7,8 @@ core_version_requirement: ^8 || ^9
 base theme: bootstrap_barrio
   
 libraries:
-  - kira_sass/global-styling
-
+  - kira_sass/base
+  - bootstrap_barrio/global-styling
 
 regions:
   top_header: 'Top header'
@@ -33,3 +33,11 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
+
+libraries-override:
+  bootstrap_barrio/global-styling:
+    css:
+      component:
+        css/components/site-footer.css: false
+        css/components/search-form.css: false
+        css/components/user.css: false
