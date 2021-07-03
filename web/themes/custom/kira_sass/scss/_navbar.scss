@@ -240,105 +240,120 @@
 
 // Dark links against a light background
 
-.navbar-light {
+@include media-breakpoint-down(xs) {
+  .navbar-light {
+
+    svg {
+	    display: none;
+    }	
+
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .navbar-light {
   
   //shapes behind nav items -- set initial state first and then hover state 
-
-  .nav-rt {
-	fill: $accent-light;
-  }
-
-  li.show {color: $white;}
-
-  a.nav-link, span.nav-link {
-     margin-top: -65px;
-  }
-
-  #Work-rt {
-	visibility: hidden;
-	transform: translate(-105px, 75px) rotate(-20deg) scale(1.1);
-  }
-  
-  #Play-rt {
-	visibility: hidden;
-	transform: translate(-5px, -6px);
-  }
-  
-  #Create-rt {
-    transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
-  }
-
-  .dropdown-item, .dropdown-menu {
-    width: 80%;
-  }
-
-  li:nth-child(1):hover, li:nth-child(1):focus, 
-  li:nth-child(1).active:hover, li:nth-child(1).active:focus  {
-    a {color: $white;}
-	#Work-rt {
-	  fill: $primary-dark;
-	  visibility: visible;
-	}
-  }
-
-  li:nth-child(2):hover, li:nth-child(2):focus, 
-  li:nth-child(2).active:hover, li:nth-child(2).active:focus,
-  li:nth-child(2).show:hover, li:nth-child(2).show:focus
-    {
-    span, a,  {color: $white;}
-    #Play-rt {
-	  fill: $accent-dark;
-	  visibility: visible;
-	}
-	
-	ul.dropdown-menu {
-      margin-top: 8px;
-	}
-	ul.dropdown-menu li a {
-      color: $gray-800;
-	  font-family: $font-family-serif;
+    .nav-rt {
+	  fill: $accent-light;
     }
 
-  }
+    li.show {color: $white;}
 
-  li:nth-child(3):hover, li:nth-child(3):focus,
-  li:nth-child(3).active:hover, li:nth-child(3).active:focus {
-    a {color: $white;}
-	#Create-rt {
-	  fill: $accent-shade;
-	}
-  }
+    a.nav-link, span.nav-link {
+      margin-top: -65px;
+    }
 
-  .navbar-nav {
-    .nav-link { // controls font of  expanded top-level, span or a
+    #Work-rt {
+	  visibility: hidden;
+	  transform: translate(-105px, 75px) rotate(-20deg) scale(1.1);
+    }
+  
+    #Play-rt {
+	  visibility: hidden;
+	  transform: translate(-5px, -6px);
+    }
+  
+    #Create-rt {
+      visibility: visible;
+	  transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
+    }
+
+    .dropdown-item, .dropdown-menu {
+      width: 7rem;
+    }
+  
+    .dropdown-item {
+      padding: 5px 5px 5px 15px;
+    }
+
+    li:nth-child(1):hover, li:nth-child(1):focus, 
+    li:nth-child(1).active:hover, li:nth-child(1).active:focus  {
+      a {color: $white;}
+	  #Work-rt {
+	    fill: $primary-dark;
+	    visibility: visible;
+	  }
+    }
+
+    li:nth-child(2):hover, li:nth-child(2):focus, 
+    li:nth-child(2).active:hover, li:nth-child(2).active:focus,
+    li:nth-child(2).show:hover, li:nth-child(2).show:focus,
+    li:nth-child(2).show {
+      span, a,  {color: $white;}
+      #Play-rt {
+	    fill: $accent-dark;
+	    visibility: visible;
+	  }
+	
+      ul.dropdown-menu {
+        margin-top: 8px;
+	  }
+	  ul.dropdown-menu li a {
+        color: $gray-800;
+	    font-family: $font-family-serif;
+      }
+
+    }
+
+    li:nth-child(3):hover, li:nth-child(3):focus,
+    li:nth-child(3).active:hover, li:nth-child(3).active:focus {
+      a {color: $white;}
+	  #Create-rt {
+	    fill: $accent-shade;
+	  }
+    }
+
+    .navbar-nav {
+      .nav-link { // controls font of  expanded top-level, span or a
       color: $gray-800; //matches text
       font-family: $headings-font-family;
 	  font-size: 1.5rem;
-	  text-align: center;
+      text-align: center;
     }
 
 //    .show > .nav-link,
 //    .active > .nav-link,
-    //.nav-link.show,
+//    .nav-link.show,
 //    .nav-link.active {
 //      color: $navbar-light-active-color;
 //    }
-  }
+    }
 
 //  .navbar-toggler {
 //    color: $navbar-light-color;
 //    border-color: $navbar-light-toggler-border-color;
 //  }
 
-  .navbar-text {
-    color: $navbar-light-color;
-    a {
-      color: $navbar-light-active-color;
-
-      @include hover-focus() {
+    .navbar-text {
+      color: $navbar-light-color;
+      a {
         color: $navbar-light-active-color;
+
+        @include hover-focus() {
+          color: $navbar-light-active-color;
+        }
       }
     }
   }
 }
-

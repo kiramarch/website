@@ -51,7 +51,8 @@
 		  'align-self-end',
         ]
       %}
-      <li{{ item.attributes.addClass(classes) }}>
+
+	  <li{{ item.attributes.addClass(classes) }}>
         {%
           set link_classes = [
             not menu_level ? 'nav-link',
@@ -73,6 +74,7 @@
           {{ link(item.title, item.url, {'class': link_classes}) }}
         {% endif %}
       </li>
+
     {% endfor %}
     </ul>
   {% endif %}

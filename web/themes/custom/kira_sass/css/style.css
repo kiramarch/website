@@ -3013,26 +3013,56 @@ input[type=button].btn-block {
   margin-left: 0;
 }
 
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  display: none;
-  float: left;
-  min-width: 8rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
-  font-size: 1rem;
-  color: #343a40;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
-}
+@media (max-width: 575.98px) {
+  li.nav-item {
+    text-align: left;
+    width: 100%;
+    padding-left: 70%;
+    font-size: 1.25rem;
+    font-family: "Sansita", Georgia, Times, serif;
+  }
+  li.nav-item a.nav-link, li.nav-item span.nav-link {
+    color: #343a40;
+  }
 
+  li.dropdown-item {
+    text-align: left;
+    padding-right: 0px;
+    padding-left: 10%;
+    font-size: 1rem;
+    font-family: "Sansita", Georgia, Times, serif;
+  }
+  li.dropdown-item a {
+    color: #343a40;
+  }
+
+  li.nav-item a:hover, li.nav-item a:focus, li.nav-item a:active,
+li.dropdown-item a:hover, li.dropdown-item a:focus, li.dropdown-item a:active li.dropdown-item:hover,
+li.dropdown-item:focus, li.dropdown-item:active {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #fff;
+  }
+}
+@media (min-width: 576px) {
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #343a40;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0px;
+  }
+}
 .dropdown-menu-left {
   right: auto;
   left: 0;
@@ -3181,7 +3211,6 @@ input[type=button].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: normal;
-  color: #212529;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -3190,12 +3219,12 @@ input[type=button].btn-block {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #e9ecef;
+  background-color: #f7e2da;
 }
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #04b5b5;
+  background-color: #f7e2da;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
@@ -4298,86 +4327,101 @@ input[type=button].btn-block {
   display: none;
 }
 
-.navbar-light .nav-rt {
-  fill: #f7e2da;
+@media (max-width: 575.98px) {
+  .navbar-light svg {
+    display: none;
+  }
 }
-.navbar-light li.show {
-  color: #fff;
-}
-.navbar-light a.nav-link, .navbar-light span.nav-link {
-  margin-top: -65px;
-}
-.navbar-light #Work-rt {
-  visibility: hidden;
-  transform: translate(-105px, 75px) rotate(-20deg) scale(1.1);
-}
-.navbar-light #Play-rt {
-  visibility: hidden;
-  transform: translate(-5px, -6px);
-}
-.navbar-light #Create-rt {
-  transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
-}
-.navbar-light .dropdown-item, .navbar-light .dropdown-menu {
-  width: 80%;
-}
-.navbar-light li:nth-child(1):hover a, .navbar-light li:nth-child(1):focus a,
+@media (min-width: 576px) {
+  .navbar-light .nav-rt {
+    fill: #f7e2da;
+  }
+  .navbar-light li.show {
+    color: #fff;
+  }
+  .navbar-light a.nav-link, .navbar-light span.nav-link {
+    margin-top: -65px;
+  }
+  .navbar-light #Work-rt {
+    visibility: hidden;
+    transform: translate(-105px, 75px) rotate(-20deg) scale(1.1);
+  }
+  .navbar-light #Play-rt {
+    visibility: hidden;
+    transform: translate(-5px, -6px);
+  }
+  .navbar-light #Create-rt {
+    visibility: visible;
+    transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
+  }
+  .navbar-light .dropdown-item, .navbar-light .dropdown-menu {
+    width: 7rem;
+  }
+  .navbar-light .dropdown-item {
+    padding: 5px 5px 5px 15px;
+  }
+  .navbar-light li:nth-child(1):hover a, .navbar-light li:nth-child(1):focus a,
 .navbar-light li:nth-child(1).active:hover a, .navbar-light li:nth-child(1).active:focus a {
-  color: #fff;
-}
-.navbar-light li:nth-child(1):hover #Work-rt, .navbar-light li:nth-child(1):focus #Work-rt,
+    color: #fff;
+  }
+  .navbar-light li:nth-child(1):hover #Work-rt, .navbar-light li:nth-child(1):focus #Work-rt,
 .navbar-light li:nth-child(1).active:hover #Work-rt, .navbar-light li:nth-child(1).active:focus #Work-rt {
-  fill: #066661;
-  visibility: visible;
-}
-.navbar-light li:nth-child(2):hover span, .navbar-light li:nth-child(2):hover a, .navbar-light li:nth-child(2):focus span, .navbar-light li:nth-child(2):focus a,
+    fill: #066661;
+    visibility: visible;
+  }
+  .navbar-light li:nth-child(2):hover span, .navbar-light li:nth-child(2):hover a, .navbar-light li:nth-child(2):focus span, .navbar-light li:nth-child(2):focus a,
 .navbar-light li:nth-child(2).active:hover span,
 .navbar-light li:nth-child(2).active:hover a, .navbar-light li:nth-child(2).active:focus span, .navbar-light li:nth-child(2).active:focus a,
 .navbar-light li:nth-child(2).show:hover span,
-.navbar-light li:nth-child(2).show:hover a, .navbar-light li:nth-child(2).show:focus span, .navbar-light li:nth-child(2).show:focus a {
-  color: #fff;
-}
-.navbar-light li:nth-child(2):hover #Play-rt, .navbar-light li:nth-child(2):focus #Play-rt,
+.navbar-light li:nth-child(2).show:hover a, .navbar-light li:nth-child(2).show:focus span, .navbar-light li:nth-child(2).show:focus a,
+.navbar-light li:nth-child(2).show span,
+.navbar-light li:nth-child(2).show a {
+    color: #fff;
+  }
+  .navbar-light li:nth-child(2):hover #Play-rt, .navbar-light li:nth-child(2):focus #Play-rt,
 .navbar-light li:nth-child(2).active:hover #Play-rt, .navbar-light li:nth-child(2).active:focus #Play-rt,
-.navbar-light li:nth-child(2).show:hover #Play-rt, .navbar-light li:nth-child(2).show:focus #Play-rt {
-  fill: #ba2f24;
-  visibility: visible;
-}
-.navbar-light li:nth-child(2):hover ul.dropdown-menu, .navbar-light li:nth-child(2):focus ul.dropdown-menu,
+.navbar-light li:nth-child(2).show:hover #Play-rt, .navbar-light li:nth-child(2).show:focus #Play-rt,
+.navbar-light li:nth-child(2).show #Play-rt {
+    fill: #ba2f24;
+    visibility: visible;
+  }
+  .navbar-light li:nth-child(2):hover ul.dropdown-menu, .navbar-light li:nth-child(2):focus ul.dropdown-menu,
 .navbar-light li:nth-child(2).active:hover ul.dropdown-menu, .navbar-light li:nth-child(2).active:focus ul.dropdown-menu,
-.navbar-light li:nth-child(2).show:hover ul.dropdown-menu, .navbar-light li:nth-child(2).show:focus ul.dropdown-menu {
-  margin-top: 8px;
-}
-.navbar-light li:nth-child(2):hover ul.dropdown-menu li a, .navbar-light li:nth-child(2):focus ul.dropdown-menu li a,
+.navbar-light li:nth-child(2).show:hover ul.dropdown-menu, .navbar-light li:nth-child(2).show:focus ul.dropdown-menu,
+.navbar-light li:nth-child(2).show ul.dropdown-menu {
+    margin-top: 8px;
+  }
+  .navbar-light li:nth-child(2):hover ul.dropdown-menu li a, .navbar-light li:nth-child(2):focus ul.dropdown-menu li a,
 .navbar-light li:nth-child(2).active:hover ul.dropdown-menu li a, .navbar-light li:nth-child(2).active:focus ul.dropdown-menu li a,
-.navbar-light li:nth-child(2).show:hover ul.dropdown-menu li a, .navbar-light li:nth-child(2).show:focus ul.dropdown-menu li a {
-  color: #343a40;
-  font-family: "Sansita", Georgia, Times, serif;
-}
-.navbar-light li:nth-child(3):hover a, .navbar-light li:nth-child(3):focus a,
+.navbar-light li:nth-child(2).show:hover ul.dropdown-menu li a, .navbar-light li:nth-child(2).show:focus ul.dropdown-menu li a,
+.navbar-light li:nth-child(2).show ul.dropdown-menu li a {
+    color: #343a40;
+    font-family: "Sansita", Georgia, Times, serif;
+  }
+  .navbar-light li:nth-child(3):hover a, .navbar-light li:nth-child(3):focus a,
 .navbar-light li:nth-child(3).active:hover a, .navbar-light li:nth-child(3).active:focus a {
-  color: #fff;
-}
-.navbar-light li:nth-child(3):hover #Create-rt, .navbar-light li:nth-child(3):focus #Create-rt,
+    color: #fff;
+  }
+  .navbar-light li:nth-child(3):hover #Create-rt, .navbar-light li:nth-child(3):focus #Create-rt,
 .navbar-light li:nth-child(3).active:hover #Create-rt, .navbar-light li:nth-child(3).active:focus #Create-rt {
-  fill: #ff4027;
+    fill: #ff4027;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #343a40;
+    font-family: "Sansita", Georgia, Times, serif;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .navbar-light .navbar-text {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-light .navbar-text a {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
+    color: rgba(0, 0, 0, 0.9);
+  }
 }
-.navbar-light .navbar-nav .nav-link {
-  color: #343a40;
-  font-family: "Sansita", Georgia, Times, serif;
-  font-size: 1.5rem;
-  text-align: center;
-}
-.navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5);
-}
-.navbar-light .navbar-text a {
-  color: rgba(0, 0, 0, 0.9);
-}
-.navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
-}
-
 .card {
   position: relative;
   display: flex;
