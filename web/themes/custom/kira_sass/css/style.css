@@ -3021,9 +3021,6 @@ input[type=button].btn-block {
     font-size: 1.25rem;
     font-family: "Sansita", Georgia, Times, serif;
   }
-  li.nav-item a.nav-link, li.nav-item span.nav-link {
-    color: #343a40;
-  }
 
   li.dropdown-item {
     text-align: left;
@@ -3041,7 +3038,6 @@ li.dropdown-item a:hover, li.dropdown-item a:focus, li.dropdown-item a:active li
 li.dropdown-item:focus, li.dropdown-item:active {
     font-weight: bold;
     text-decoration: none;
-    background-color: #fff;
   }
 }
 @media (min-width: 576px) {
@@ -3061,6 +3057,10 @@ li.dropdown-item:focus, li.dropdown-item:active {
     background-color: #fff;
     background-clip: padding-box;
     border: 0px;
+  }
+
+  li.dropdown-item a:hover {
+    text-decoration: none;
   }
 }
 .dropdown-menu-left {
@@ -4331,13 +4331,31 @@ li.dropdown-item:focus, li.dropdown-item:active {
   .navbar-light svg {
     display: none;
   }
+  .navbar-light a.nav-link, .navbar-light span.nav-link {
+    color: #343a40;
+  }
+  .navbar-light li:nth-child(1).active {
+    background-color: #066661;
+  }
+  .navbar-light a.nav-link--work.active {
+    color: #fff;
+  }
+  .navbar-light li:nth-child(3).active {
+    background-color: #ff4027;
+  }
+  .navbar-light a.nav-link--create.active {
+    color: #fff;
+  }
 }
 @media (min-width: 576px) {
-  .navbar-light .nav-rt {
-    fill: #f7e2da;
-  }
   .navbar-light li.show {
     color: #fff;
+  }
+  .navbar-light .dropdown-item, .navbar-light .dropdown-menu {
+    width: 7rem;
+  }
+  .navbar-light .dropdown-item {
+    padding: 5px 5px 5px 15px;
   }
   .navbar-light a.nav-link, .navbar-light span.nav-link {
     margin-top: -65px;
@@ -4351,14 +4369,23 @@ li.dropdown-item:focus, li.dropdown-item:active {
     transform: translate(-5px, -6px);
   }
   .navbar-light #Create-rt {
-    visibility: visible;
+    visibility: hidden;
+    fill: #ff4027;
     transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
   }
-  .navbar-light .dropdown-item, .navbar-light .dropdown-menu {
-    width: 7rem;
+  .navbar-light li:nth-child(1).active #Work-rt {
+    fill: #066661;
+    visibility: visible;
   }
-  .navbar-light .dropdown-item {
-    padding: 5px 5px 5px 15px;
+  .navbar-light li:nth-child(1).active a {
+    color: #fff;
+  }
+  .navbar-light li:nth-child(3).active #Create-rt {
+    fill: #ff4027;
+    visibility: visible;
+  }
+  .navbar-light li:nth-child(3).active a {
+    color: #fff;
   }
   .navbar-light li:nth-child(1):hover a, .navbar-light li:nth-child(1):focus a,
 .navbar-light li:nth-child(1).active:hover a, .navbar-light li:nth-child(1).active:focus a {
@@ -4405,21 +4432,13 @@ li.dropdown-item:focus, li.dropdown-item:active {
   .navbar-light li:nth-child(3):hover #Create-rt, .navbar-light li:nth-child(3):focus #Create-rt,
 .navbar-light li:nth-child(3).active:hover #Create-rt, .navbar-light li:nth-child(3).active:focus #Create-rt {
     fill: #ff4027;
+    visibility: visible;
   }
   .navbar-light .navbar-nav .nav-link {
     color: #343a40;
     font-family: "Sansita", Georgia, Times, serif;
     font-size: 1.5rem;
     text-align: center;
-  }
-  .navbar-light .navbar-text {
-    color: rgba(0, 0, 0, 0.5);
-  }
-  .navbar-light .navbar-text a {
-    color: rgba(0, 0, 0, 0.9);
-  }
-  .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-    color: rgba(0, 0, 0, 0.9);
   }
 }
 .card {

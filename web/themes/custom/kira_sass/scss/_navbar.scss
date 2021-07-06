@@ -240,25 +240,47 @@
 
 // Dark links against a light background
 
-@include media-breakpoint-down(xs) {
-  .navbar-light {
 
+@include media-breakpoint-down(xs) { //hide shapes on small screens
+  .navbar-light {
     svg {
 	    display: none;
     }	
 
+	a.nav-link, span.nav-link {
+      color: $gray-800;
+    }
+
+    li:nth-child(1).active {
+	  background-color: $primary-dark;
+	}
+    
+	a.nav-link--work.active {
+	    color: $white;
+	}
+
+    li:nth-child(3).active {
+	  background-color: $accent-shade;
+	}
+	a.nav-link--create.active {
+	    color: $white;
+	}
   }
 }
 
 @include media-breakpoint-up(sm) {
   .navbar-light {
-  
-  //shapes behind nav items -- set initial state first and then hover state 
-    .nav-rt {
-	  fill: $accent-light;
-    }
+
 
     li.show {color: $white;}
+
+    .dropdown-item, .dropdown-menu {
+      width: 7rem;
+    }
+  
+    .dropdown-item {
+      padding: 5px 5px 5px 15px;
+    }
 
     a.nav-link, span.nav-link {
       margin-top: -65px;
@@ -275,21 +297,38 @@
     }
   
     #Create-rt {
-      visibility: visible;
+      visibility: hidden;
+	  fill: $accent-shade;
 	  transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
     }
 
-    .dropdown-item, .dropdown-menu {
-      width: 7rem;
-    }
-  
-    .dropdown-item {
-      padding: 5px 5px 5px 15px;
-    }
+
+    li:nth-child(1).active {
+	  #Work-rt {
+	    fill: $primary-dark;
+	    visibility: visible;
+	  }
+	  a {
+	    color: $white;
+	  }
+	}
+	
+	
+	li:nth-child(3).active {
+	  #Create-rt {
+	    fill: $accent-shade;
+	    visibility: visible;
+	  }
+	  a {
+	    color: $white;
+	  }
+	}
 
     li:nth-child(1):hover, li:nth-child(1):focus, 
     li:nth-child(1).active:hover, li:nth-child(1).active:focus  {
-      a {color: $white;}
+      a {
+	    color: $white;
+	  }
 	  #Work-rt {
 	    fill: $primary-dark;
 	    visibility: visible;
@@ -321,6 +360,7 @@
       a {color: $white;}
 	  #Create-rt {
 	    fill: $accent-shade;
+		visibility: visible;
 	  }
     }
 
@@ -332,28 +372,7 @@
       text-align: center;
     }
 
-//    .show > .nav-link,
-//    .active > .nav-link,
-//    .nav-link.show,
-//    .nav-link.active {
-//      color: $navbar-light-active-color;
-//    }
-    }
 
-//  .navbar-toggler {
-//    color: $navbar-light-color;
-//    border-color: $navbar-light-toggler-border-color;
-//  }
-
-    .navbar-text {
-      color: $navbar-light-color;
-      a {
-        color: $navbar-light-active-color;
-
-        @include hover-focus() {
-          color: $navbar-light-active-color;
-        }
-      }
     }
   }
 }
