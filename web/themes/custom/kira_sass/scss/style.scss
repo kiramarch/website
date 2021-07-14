@@ -51,7 +51,10 @@ a:hover {
 }
 
 .site-footer {
-
+  background-color: $primary-light;
+  font-size: .65rem;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .menu--main li a {
