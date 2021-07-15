@@ -131,7 +131,7 @@
 // Keep as a separate element so folks can easily override it with another icon
 // or image file as needed.
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../templates/l_menu.svg");  
+  background-image: url("../templates/l_menu_path.svg");  
   display: inline-block;
   width: 2.25em;
   height: 2.25em;
@@ -147,7 +147,7 @@
 
 .navbar-light .navbar-toggler-icon:hover {
   // background-color: $primary-light;
-  background-image: url("../templates/l_menu_light.svg");  
+  background-image: url("../templates/l_menu_path_light.svg");  
 }
 
 .navbar-nav-scroll {
@@ -251,7 +251,7 @@
       color: $gray-800;
     }
 
-    li:nth-child(1).active {
+    li:nth-child(1).nav-item.active {
 	  background-color: $primary-dark;
 	}
     

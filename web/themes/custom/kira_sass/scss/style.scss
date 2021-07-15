@@ -52,9 +52,11 @@ a:hover {
 
 .site-footer {
   background-color: $primary-light;
-  font-size: .65rem;
-  padding-top: 10px;
+  color: $primary-dark;
+  font-size: .85rem;
+  padding-top: 30px;
   padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 .menu--main li a {

@@ -3029,8 +3029,8 @@ input[type=button].btn-block {
     font-size: 1rem;
     font-family: "Sansita", Georgia, Times, serif;
   }
-  li.dropdown-item a {
-    color: #343a40;
+  li.dropdown-item a, li.dropdown-item nav-link--tandem.active, li.dropdown-item nav-link--photos.active {
+    color: #343a40 !important;
   }
 
   li.nav-item a:hover, li.nav-item a:focus, li.nav-item a:active,
@@ -4082,7 +4082,7 @@ li.dropdown-item:focus, li.dropdown-item:active {
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../templates/l_menu.svg");
+  background-image: url("../templates/l_menu_path.svg");
   display: inline-block;
   width: 2.25em;
   height: 2.25em;
@@ -4097,7 +4097,7 @@ li.dropdown-item:focus, li.dropdown-item:active {
 }
 
 .navbar-light .navbar-toggler-icon:hover {
-  background-image: url("../templates/l_menu_light.svg");
+  background-image: url("../templates/l_menu_path_light.svg");
 }
 
 .navbar-nav-scroll {
@@ -4334,7 +4334,7 @@ li.dropdown-item:focus, li.dropdown-item:active {
   .navbar-light a.nav-link, .navbar-light span.nav-link {
     color: #343a40;
   }
-  .navbar-light li:nth-child(1).active {
+  .navbar-light li:nth-child(1).nav-item.active {
     background-color: #066661;
   }
   .navbar-light a.nav-link--work.active {
@@ -9702,9 +9702,11 @@ a:hover {
 
 .site-footer {
   background-color: #e8f9f7;
-  font-size: 0.65rem;
-  padding-top: 10px;
+  color: #066661;
+  font-size: 0.85rem;
+  padding-top: 30px;
   padding-left: 10px;
+  padding-bottom: 15px;
 }
 
 .menu--main li a {
