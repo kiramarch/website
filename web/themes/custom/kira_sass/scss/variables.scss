@@ -1,12 +1,22 @@
 /* VARIABLES */
 
 // colors
+//original teal set
 $primary-shade: #04b5b5; 
 $primary-light: #e8f9f7;
 $primary-dark: #066661;  
-$accent-shade: #ff4027;
-$accent-light: #f7e2da;
-$accent-dark: #ba2f24;
+//original orange
+//$accent-shade: #ff4027;
+//$accent-light: #f7e2da;
+//$accent-dark: #ba2f24;
+//red-orange variation
+$accent-shade: #cc2700; // #ff4027;
+$accent-light: #ffd6cc; // #f7e2da;
+$accent-dark: #801900; // #ba2f24;
+//orange-yellow variation
+$accent2-shade: #ffa01a;
+$accent2-light: #ffeacc;
+$accent2-dark: #cc7700;
 
 // Reassign color vars to semantic color scheme
 $red: #ba2f24;

@@ -260,7 +260,7 @@
 	}
 
     li:nth-child(3).active {
-	  background-color: $accent-shade;
+	  background-color: $accent2-shade;
 	}
 	a.nav-link--create.active {
 	    color: $white;
@@ -298,7 +298,6 @@
   
     #Create-rt {
       visibility: hidden;
-	  fill: $accent-shade;
 	  transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
     }
 
@@ -316,7 +315,7 @@
 	
 	li:nth-child(3).active {
 	  #Create-rt {
-	    fill: $accent-shade;
+	    fill: $accent2-shade;
 	    visibility: visible;
 	  }
 	  a {
@@ -341,7 +340,7 @@
     li:nth-child(2).show {
       span, a,  {color: $white;}
       #Play-rt {
-	    fill: $accent-dark;
+	    fill: $accent-shade;
 	    visibility: visible;
 	  }
 	
@@ -359,7 +358,7 @@
     li:nth-child(3).active:hover, li:nth-child(3).active:focus {
       a {color: $white;}
 	  #Create-rt {
-	    fill: $accent-shade;
+	    fill: $accent2-shade;
 		visibility: visible;
 	  }
     }
