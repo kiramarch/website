@@ -20,7 +20,7 @@
         "drupal/bootstrap_barrio": "~5.1.5",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8",
+        "drupal/core-recommended": "8.9.17",
         "drupal/entityqueue": "1.2",
         "drupal/nodeorder": "^1.0@beta"
     },
