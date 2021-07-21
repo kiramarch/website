@@ -1,25 +1,13 @@
-name: Bootstrap Barrio
+name: Bootstrap Barrio Subtheme
 type: theme
-description: 'A flexible Booststrap based theme, with many regions and a responsive, mobile-first layout.'
+description: 'Basic structure for a Bootstrap Barrio SubTheme.'
 core: 8.x
 core_version_requirement: ^8 || ^9
-base theme: false
+base theme: bootstrap_barrio
 
 libraries:
-  - bootstrap_barrio/global-styling
-
-libraries-extend:
-  core/drupal.dropbutton:
-    - bootstrap_barrio/dropbutton
-  file/drupal.file:
-    - bootstrap_barrio/file
-  views/views.ajax:
-    - bootstrap_barrio/views.ajax
-  node/drupal.node.preview:
-    - bootstrap_barrio/drupal.node.preview
-
-ckeditor_stylesheets:
-  - css/components/table.css
+  - bootstrap_barrio_subtheme/bootstrap_cdn
+  - bootstrap_barrio_subtheme/global-styling
 
 regions:
   top_header: 'Top header'

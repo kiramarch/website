@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '26ebb628d8062c782a6a38f584092546af0069ec',
+        'reference' => '22ebc7f482bbcb63a364d2a7b67ce0fa913a6296',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -248,12 +248,12 @@
             ),
         ),
         'drupal/bootstrap_barrio' => array(
-            'pretty_version' => '5.1.4',
-            'version' => '5.1.4.0',
+            'pretty_version' => '5.1.5',
+            'version' => '5.1.5.0',
             'type' => 'drupal-theme',
             'install_path' => __DIR__ . '/../../../../../mamp/htdocs/website/web/themes/contrib/bootstrap_barrio',
             'aliases' => array(),
-            'reference' => '5.1.4',
+            'reference' => '5.1.5',
             'dev_requirement' => false,
         ),
         'drupal/breakpoint' => array(
@@ -790,7 +790,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '26ebb628d8062c782a6a38f584092546af0069ec',
+            'reference' => '22ebc7f482bbcb63a364d2a7b67ce0fa913a6296',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
