@@ -9,7 +9,7 @@ base:
     component:
       css/style.css: {}
     theme:
-      /themes/bootstrap_barrio/css/print.css: { media:print }
+      /themes/bootstrap_barrio/css/print.css: { media: print }
   dependencies:
     - core/jquery
     - core/jquery.once
