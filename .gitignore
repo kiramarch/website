@@ -18,3 +18,5 @@ web/sites/default/files/js/*
 
 # Ignore drupal core (if not versioning drupal sources)
 # (will version core, too)
+
+mamp_index.php
