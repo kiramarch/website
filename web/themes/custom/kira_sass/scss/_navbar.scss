@@ -312,7 +312,15 @@
 	  }
 	}
 	
+	li:nth-child(2).active {
+	  span, a,  {color: $white;}
+      #Play-rt {
+	    fill: $accent-shade;
+	    visibility: visible;
+	    }
+	  }
 	
+
 	li:nth-child(3).active {
 	  #Create-rt {
 	    fill: $accent2-shade;

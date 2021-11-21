@@ -4379,6 +4379,13 @@ li.dropdown-item:focus, li.dropdown-item:active {
   .navbar-light li:nth-child(1).active a {
     color: #fff;
   }
+  .navbar-light li:nth-child(2).active span, .navbar-light li:nth-child(2).active a {
+    color: #fff;
+  }
+  .navbar-light li:nth-child(2).active #Play-rt {
+    fill: #cc2700;
+    visibility: visible;
+  }
   .navbar-light li:nth-child(3).active #Create-rt {
     fill: #ffa01a;
     visibility: visible;
