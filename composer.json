@@ -18,8 +18,8 @@
         "composer/installers": "^1.2",
         "drupal/backup_migrate": "5.0.1",
         "drupal/bootstrap_barrio": "5.1.6",
-        "drupal/core-composer-scaffold": "9.2.6",
-        "drupal/core-recommended": "9.2.6",
+        "drupal/core-composer-scaffold": "~9.2.9",
+        "drupal/core-recommended": "~9.2.9",
         "drupal/entityqueue": "^1.2"
     },
     "conflict": {
