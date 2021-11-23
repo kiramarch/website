@@ -53,3 +53,28 @@ function kira_sass_preprocess_input (array &$variables) {
    
 }
 
+/**
+ * Adds paragraph editor-set variables to field classes
+ */
+function kira_sass_preprocess_paragraph(&$variables) {
+
+  $paragraph = $variables['paragraph'];
+
+  // Retrieve certain field's values and add them as CSS classes.
+  $para_fields = [
+    'field_alignment',
+    'field_background_color',
+  ];
+
+  foreach ($para_fields as $para_field) {
+
+    if ($paragraph->hasField($para_field)) {
+
+      if (!$paragraph->get($para_field)->isEmpty()) {
+
+        $variables['attributes']['class'][] = $paragraph->get($para_field)->getString();
+      } 
+    }
+  }
+}
+

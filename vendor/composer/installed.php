@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'caca042c3bcb8dbda5d299871cddbdc4fa4168a9',
+        'reference' => '17f403aff0bd927b002bae2d7f0bc8cb0e631941',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -171,6 +171,15 @@
             'replaced' => array(
                 0 => '9.2.9',
             ),
+        ),
+        'drupal/color_field' => array(
+            'pretty_version' => '2.5.0',
+            'version' => '2.5.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../../../../mamp/htdocs/website/web/modules/contrib/color_field',
+            'aliases' => array(),
+            'reference' => '8.x-2.5',
+            'dev_requirement' => false,
         ),
         'drupal/comment' => array(
             'dev_requirement' => false,
@@ -427,6 +436,15 @@
                 0 => '9.2.9',
             ),
         ),
+        'drupal/entity_reference_revisions' => array(
+            'pretty_version' => '1.9.0',
+            'version' => '1.9.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../../../../mamp/htdocs/website/web/modules/contrib/entity_reference_revisions',
+            'aliases' => array(),
+            'reference' => '8.x-1.9',
+            'dev_requirement' => false,
+        ),
         'drupal/entityqueue' => array(
             'pretty_version' => '1.2.0',
             'version' => '1.2.0.0',
@@ -622,6 +640,15 @@
                 0 => '9.2.9',
             ),
         ),
+        'drupal/paragraphs' => array(
+            'pretty_version' => '1.12.0',
+            'version' => '1.12.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../../../../mamp/htdocs/website/web/modules/contrib/paragraphs',
+            'aliases' => array(),
+            'reference' => '8.x-1.12',
+            'dev_requirement' => false,
+        ),
         'drupal/path' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -652,7 +679,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'caca042c3bcb8dbda5d299871cddbdc4fa4168a9',
+            'reference' => '17f403aff0bd927b002bae2d7f0bc8cb0e631941',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
