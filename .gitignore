@@ -15,6 +15,7 @@ web/sites/*/translations
 web/sites/*/tmp
 web/sites/*/cache
 web/sites/default/files/js/*
+web/sites/default/files/styles/*
 
 # Ignore drupal core (if not versioning drupal sources)
 # (will version core, too)

@@ -1,0 +1,12 @@
+{#
+/** 
+* used on photo nodes, photo field only. 
+* stripped-down template to remove extra divs, replace with just one 
+**/
+#}
+
+<div class="full-photo">
+{% for item in items %}
+  {{ item.content }}
+{% endfor %}
+</div>

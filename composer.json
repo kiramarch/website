@@ -19,8 +19,8 @@
         "drupal/backup_migrate": "5.0.1",
         "drupal/bootstrap_barrio": "5.1.6",
         "drupal/color_field": "^2.5",
-        "drupal/core-composer-scaffold": "~9.2.9",
-        "drupal/core-recommended": "~9.2.9",
+        "drupal/core-composer-scaffold": "9.3.3",
+        "drupal/core-recommended": "9.3.3",
         "drupal/entityqueue": "^1.2",
         "drupal/paragraphs": "^1.12"
     },
@@ -30,7 +30,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true
+        }
     },
     "extra": {
         "drupal-scaffold": {

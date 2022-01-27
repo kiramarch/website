@@ -9661,13 +9661,20 @@ h3 {
   }
 }
 /* DRUPAL CLASSES */
-/* a file specifically to style specific drupal elements that I can't style other ways */
+/* a file specifically to style specific drupal elements */
+/* FIXES */
+/* sloppy but hides elements I can't hide in other ways */
 #edit-comment-body-0-format-help {
   display: none;
 }
 
 #content div.inline__links {
   display: none;
+}
+
+/* PHOTO PAGE */
+.full-photo img {
+  width: 100%;
 }
 
 /* GENERAL STYLES

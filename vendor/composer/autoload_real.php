@@ -77,8 +77,8 @@ class ComposerAutoloaderInit74472cbc7c227e385e05e58c940a433c
 function composerRequire74472cbc7c227e385e05e58c940a433c($fileIdentifier, $file)
 {
     if (empty($GLOBALS['__composer_autoload_files'][$fileIdentifier])) {
-        require $file;
-
         $GLOBALS['__composer_autoload_files'][$fileIdentifier] = true;
+
+        require $file;
     }
 }
