@@ -12,7 +12,7 @@
 //@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 //bootstrap override
-@import "bootstrap-overrides";
+@import "overrides/bootstrap-overrides";
 
 //material design bootstrap
 //@import "../node_modules/mdbootstrap/scss/mdb-free.scss";
@@ -20,8 +20,10 @@
 // mixins (moved to overrides file)
 // @import "mixins";
 
-// drupal classes
-@import "drupalclasses";
+// drupal-specific
+@import "pages/drupalfixes";
+@import "pages/photopage";
+
 
 // barrio
 //@import "../../../contrib/bootstrap_barrio/scss/barrio.scss";

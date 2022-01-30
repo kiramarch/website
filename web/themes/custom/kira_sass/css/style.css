@@ -9660,9 +9660,7 @@ h3 {
     border-color: #dee2e6;
   }
 }
-/* DRUPAL CLASSES */
-/* a file specifically to style specific drupal elements */
-/* FIXES */
+/* DRUPAL FIXES */
 /* sloppy but hides elements I can't hide in other ways */
 #edit-comment-body-0-format-help {
   display: none;
@@ -9703,7 +9701,7 @@ p, li {
     height: 90px;
   }
 }
-/* COLORS 
+/* GENERAL COLORS 
 --------------------------------------------------*/
 a {
   color: #066661;
@@ -9742,7 +9740,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* CARDS and CAROUSELS 
+/* CARDS and CAROUSELS (could move to components...?)
 --------------------------------------------------*/
 .card-group img {
   margin: 0;

@@ -3,7 +3,7 @@
 {#
 /**
  * @file
- * Override for a field, to eliminate extra div tags
+ * Override for a field, to eliminate extra div tags (3 sets)
  *
  * Available variables:
  * - attributes: HTML attributes for the containing element.
@@ -39,24 +39,24 @@
 %}
 
 {% block field %}
-  <div{{ attributes.addClass(classes) }}>
+
     {% block label %}
       {% if label and not label_hidden %}
-        <div{{ title_attributes.addClass(title_classes) }}>{{ label }}</div>
+        
       {% endif %}
     {% endblock %}
     {% block content %}
       {% if multiple %}
-        <div class="field__items">
+        
           {% block items %}
             {% for item in items %}
-              <div{{ item.attributes.addClass('field__item') }}>{{ item.content }}</div>
+              {{ item.content }}
             {% endfor %}
           {% endblock %}
-        </div>
+        
       {% else %}
         {{ block('items') }}
       {% endif %}
     {% endblock %}
-  </div>
+  
 {% endblock %}

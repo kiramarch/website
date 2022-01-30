@@ -17,6 +17,9 @@ web/sites/*/cache
 web/sites/default/files/js/*
 web/sites/default/files/styles/*
 
+# Ignore working files that shouldn't be tracked
+web/themes/custom/kira_sass/scss/not_used/*
+
 # Ignore drupal core (if not versioning drupal sources)
 # (will version core, too)
 

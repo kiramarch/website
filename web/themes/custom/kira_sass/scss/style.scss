@@ -14,6 +14,7 @@ body {
 	padding-top: 126px;
 }
 
+// manages overlap of fixed header
 #main {
     padding-bottom: 40px;
 }
@@ -37,7 +38,7 @@ p, li {
 
 	
 
-/* COLORS 
+/* GENERAL COLORS 
 --------------------------------------------------*/
 
 a {
@@ -79,7 +80,7 @@ a:hover {
     text-decoration: none;
 }
 
-/* CARDS and CAROUSELS 
+/* CARDS and CAROUSELS (could move to components...?)
 --------------------------------------------------*/
 
 .card-group img {
