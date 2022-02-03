@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '1feee1f3e0d9458c1d49bba3aeaad51f6ed5eb0e',
+        'reference' => '062f92bc2b9a637773e39227f1051d83068e13ac',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -556,6 +556,15 @@
                 0 => '9.3.3',
             ),
         ),
+        'drupal/layout_paragraphs' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../../../../mamp/htdocs/website/web/modules/contrib/layout_paragraphs',
+            'aliases' => array(),
+            'reference' => '1.0.0',
+            'dev_requirement' => false,
+        ),
         'drupal/link' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -685,7 +694,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '1feee1f3e0d9458c1d49bba3aeaad51f6ed5eb0e',
+            'reference' => '062f92bc2b9a637773e39227f1051d83068e13ac',
             'dev_requirement' => false,
         ),
         'drupal/responsive_image' => array(
