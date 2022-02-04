@@ -1,0 +1,15 @@
+kira_col-3-6-3-resp:
+  label: 3 Cols Responsive
+  category: Kira Columns
+  path: layouts
+  template: col-3-6-3-resp
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
