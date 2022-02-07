@@ -48,9 +48,9 @@ function kira_sass_preprocess_input (array &$variables) {
   $variables['page_type'] = NULL;
   $current_path = \Drupal::service('path.current')->getPath();
   if (strpos($current_path, 'contact') !== false) {
-    $variables['page_type'] = 'contact';  
+    $variables['page_type'] = 'contact';
   }
-   
+
 }
 
 /**
@@ -73,8 +73,28 @@ function kira_sass_preprocess_paragraph(&$variables) {
       if (!$paragraph->get($para_field)->isEmpty()) {
 
         $variables['attributes']['class'][] = $paragraph->get($para_field)->getString();
-      } 
+      }
     }
   }
 }
 
+/**
+ * Adds img-fluid tags where needed.
+ */
+function kira_sass_preprocess_image(&$variables) {
+    $test = $variables['uri'];
+    if (str_contains($test, 'styles/illustration')) {
+        $variables['attributes']['class'][] = 'img-fluid';
+    }
+}
+
+
+
+/**
+ * Adds img-fluid tags where needed.
+
+function kira_sass_preprocess_image(&$variables) {
+
+    $variables['attributes']['class'][] = 'img-fluid';
+	}
+*/

@@ -20,9 +20,12 @@
         "drupal/bootstrap_barrio": "5.1.6",
         "drupal/core-composer-scaffold": "9.3.3",
         "drupal/core-recommended": "9.3.3",
+        "drupal/devel": "^4.1",
+        "drupal/easy_install": "^10.5",
         "drupal/entityqueue": "^1.2",
         "drupal/layout_paragraphs": "^1.0",
-        "drupal/paragraphs": "^1.12"
+        "drupal/paragraphs": "^1.12",
+        "drupal/twig_xdebug": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
