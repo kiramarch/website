@@ -58,3 +58,30 @@ $comment-spacer-y: 1.25em;
 $enable-responsive-font-sizes: true;
 $enable-shadows: false;
 $enable-gradients: false;
+
+// RT shape for use anywhere
+$rt-svg: "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 835.25 844.77'%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cpath fill='%23COLOR' class='cls-1' d='M835.25,389.27c-4.61,8.53-9,17.08-13.38,25.42-3.73,1.15-4.47,4.71-6,7.55A1082.93,1082.93,0,0,1,737.6,536.18C669,623.3,588.49,696.34,490.78,749.72,385.89,807.14,273,835.07,154.52,842.47c-6.44.48-13.14-.76-19.38,2.3-1.21-.75-2.65-1.3-3.86-2-3.85-7-7.67-14.12-11.73-21.09C38.6,684.78-6.52,538.18.77,377.34,6.48,248.11,43.84,127.07,98.66,10.8,101.54,4.88,105,2,111.85,1.55c17.37-1.2,34.48-2,51.89-1.28,96.15,4,186.82,30.94,274.13,69.09C508,100,575.18,136.52,637.58,181.57,716.11,239,786.76,303.5,835.25,389.27Z'/%3E%3C/g%3E%3C/svg%3E";
+
+/* functions to manipulate svg */
+
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@function svg-fill ($svg, $color) {
+  $color: #{str-replace(#{$color}, '#', '%23')}; /* need to trim the # sign */
+  @return str-replace($svg, '%23COLOR', '#{$color}');
+}
+
+@function svg-size ($svg, $width, $height) {
+  $svg: str-replace($svg, 'svg"><g', 'svg" viewBox="0 0 #{$width} height"><g');
+  $svg: str-replace($svg, 'height', '#{$height}');
+
+  @return $svg;
+}

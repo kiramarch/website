@@ -37,7 +37,6 @@ function kira_sass_preprocess_page(array &$variables) {
   $variables['site_name'] = 'default';
   $config = \Drupal::config('system.site');
   $variables['site_name'] = $config->get('name');
-
 }
 
 function kira_sass_preprocess_form_element (array &$variables) {

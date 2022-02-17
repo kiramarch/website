@@ -21,8 +21,9 @@
 // @import "mixins";
 
 // drupal-specific
-@import "pages/drupalfixes";
-@import "pages/photopage";
+@import "overrides/drupalfixes";
+@import "pages";
+@import "components/paragraphs";
 
 
 // barrio

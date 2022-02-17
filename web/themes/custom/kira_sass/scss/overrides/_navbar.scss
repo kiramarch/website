@@ -20,6 +20,7 @@
   display: flex;
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
+  max-width: 1200px;
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
 

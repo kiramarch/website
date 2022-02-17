@@ -1,0 +1,12 @@
+/* PHOTO PAGE */
+
+.full-photo img {
+   width: 100%; 
+}
+
+/* SIMPLE PAGE */
+
+@include media-breakpoint-up(lg) {
+  article.node--type-simple-page {
+  max-width: 720px;}
+}

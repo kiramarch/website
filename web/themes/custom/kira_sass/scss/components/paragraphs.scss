@@ -1,0 +1,25 @@
+/* ILLUSTRATION paragraph type */
+
+.paragraph--type--illustration-primary.primary-color {
+  $bg-rt: svg-fill($rt-svg, $primary-light);
+  background: url('data:image/svg+xml;utf8,#{$bg-rt}') center center no-repeat;
+}
+
+.paragraph--type--illustration-primary.accent-color {
+  $bg-rt: svg-fill($rt-svg, $accent-light);
+  background: url('data:image/svg+xml;utf8,#{$bg-rt}') center center no-repeat;
+}
+
+.paragraph--type--illustration-primary.accent2-color {
+  $bg-rt: svg-fill($rt-svg, $accent2-light);
+  background: url('data:image/svg+xml;utf8,#{$bg-rt}') center center no-repeat;
+}
+
+.paragraph--type--illustration-primary {
+  @include media-breakpoint-down(xs) {
+    max-width: 150px;
+  }
+  @include media-breakpoint-only(sm) {
+    margin-top: 2em;
+  }
+}
