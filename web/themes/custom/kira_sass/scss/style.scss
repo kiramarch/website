@@ -1,4 +1,4 @@
-/* 
+/*
 Theme Name: Bootstrap 4 Sass
 Description: Bootstrap 4 with Sass
 */
@@ -19,9 +19,9 @@ body {
     padding-bottom: 40px;
 }
 p, li {
-	letter-spacing: .0065em;	
+	letter-spacing: .0065em;
 	}
-	
+
 #site-logo {
     width: 200px;
 	height: 90px;
@@ -36,19 +36,19 @@ p, li {
     }
 
 
-	
 
-/* GENERAL COLORS 
+
+/* GENERAL COLORS
 --------------------------------------------------*/
 
 a {
 	color: $primary-dark;
 }
 
-a:hover {
+/* a:hover {
 	color: $primary-shade;
 }
-
+*/
 
 .bg-inverse {
     background: $primary-shade !important;

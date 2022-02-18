@@ -20,7 +20,7 @@
   display: flex;
   flex-wrap: wrap; // allow us to do the line break for collapsing content
   align-items: center;
-  max-width: 1200px;
+  max-width: 1170px;
   justify-content: space-between; // space out brand from logo
   padding: $navbar-padding-y $navbar-padding-x;
 
@@ -132,7 +132,7 @@
 // Keep as a separate element so folks can easily override it with another icon
 // or image file as needed.
 .navbar-light .navbar-toggler-icon {
-  background-image: url("../templates/l_menu_path.svg");  
+  background-image: url("../templates/l_menu_path.svg");
   display: inline-block;
   width: 2.25em;
   height: 2.25em;
@@ -143,12 +143,12 @@
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;
-  background-color: initial; 
+  background-color: initial;
 }
 
 .navbar-light .navbar-toggler-icon:hover {
   // background-color: $primary-light;
-  background-image: url("../templates/l_menu_path_light.svg");  
+  background-image: url("../templates/l_menu_path_light.svg");
 }
 
 .navbar-nav-scroll {
@@ -246,7 +246,7 @@
   .navbar-light {
     svg {
 	    display: none;
-    }	
+    }
 
 	a.nav-link, span.nav-link {
       color: $gray-800;
@@ -255,7 +255,7 @@
     li:nth-child(1).nav-item.active {
 	  background-color: $primary-dark;
 	}
-    
+
 	a.nav-link--work.active {
 	    color: $white;
 	}
@@ -278,7 +278,7 @@
     .dropdown-item, .dropdown-menu {
       width: 7rem;
     }
-  
+
     .dropdown-item {
       padding: 5px 5px 5px 15px;
     }
@@ -291,12 +291,12 @@
 	  visibility: hidden;
 	  transform: translate(-105px, 75px) rotate(-20deg) scale(1.1);
     }
-  
+
     #Play-rt {
 	  visibility: hidden;
 	  transform: translate(-5px, -6px);
     }
-  
+
     #Create-rt {
       visibility: hidden;
 	  transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
@@ -312,7 +312,7 @@
 	    color: $white;
 	  }
 	}
-	
+
 	li:nth-child(2).active {
 	  span, a,  {color: $white;}
       #Play-rt {
@@ -320,7 +320,7 @@
 	    visibility: visible;
 	    }
 	  }
-	
+
 
 	li:nth-child(3).active {
 	  #Create-rt {
@@ -332,7 +332,7 @@
 	  }
 	}
 
-    li:nth-child(1):hover, li:nth-child(1):focus, 
+    li:nth-child(1):hover, li:nth-child(1):focus,
     li:nth-child(1).active:hover, li:nth-child(1).active:focus  {
       a {
 	    color: $white;
@@ -343,7 +343,7 @@
 	  }
     }
 
-    li:nth-child(2):hover, li:nth-child(2):focus, 
+    li:nth-child(2):hover, li:nth-child(2):focus,
     li:nth-child(2).active:hover, li:nth-child(2).active:focus,
     li:nth-child(2).show:hover, li:nth-child(2).show:focus,
     li:nth-child(2).show {
@@ -352,7 +352,7 @@
 	    fill: $accent-shade;
 	    visibility: visible;
 	  }
-	
+
       ul.dropdown-menu {
         margin-top: 8px;
 	  }

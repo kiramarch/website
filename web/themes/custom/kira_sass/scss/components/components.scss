@@ -1,0 +1,47 @@
+/* Visual styles that can be used in many places*/
+
+/* Fancy links */
+/*
+a.primary {
+  background: url('/themes/custom/kira_sass/templates/rt-teal.svg') right center no-repeat;
+}
+
+a.primary::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0.07em;
+  height: 0.1em;
+  width: 100%;
+  background: $primary-light;
+  z-index: -1;
+  transition: height .25s cubic-bezier(.6, 0, .4, 1);
+}
+
+a.accent1 {
+  background: url('/themes/custom/kira_sass/templates/rt-brick.svg') right center no-repeat;
+}
+
+a.accent2 {
+  background: url('/themes/custom/kira_sass/templates/rt-orange.svg') right center no-repeat;
+}
+*/
+
+
+
+/* a.accent1, a.accent2, a.primary {
+  position: absolute;
+  color: $body-color;
+  background-size: 0.9em 0.9em;
+  padding-right: 1.1em;
+  font-weight: 600;
+}
+*/
+
+/* a.accent1:active, a.accent2:active, a.primary:active,
+a.accent1:focus, a.accent2:focus, a.primary:focus,
+a.accent1:hover, a.accent2:hover, a.primary:hover {
+  color: $body-color;
+  font-weight: 800;
+}
+*/

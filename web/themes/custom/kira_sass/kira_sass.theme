@@ -32,11 +32,17 @@ function kira_sass_form_system_theme_settings_alter(&$form, FormStateInterface $
 }
 
 function kira_sass_preprocess_page(array &$variables) {
-
   // Load the site name out of configuration.
   $variables['site_name'] = 'default';
   $config = \Drupal::config('system.site');
   $variables['site_name'] = $config->get('name');
+  $variables['navbar_attributes']['class'][] = 'container'; //can apply max-width
+}
+
+function kira_sass_preprocess_node__simple_page__full(array &$variables) {
+  //for simple page, add classes to article tag to control width
+  $variables['attributes']['class'][] = 'container';
+  $variables['attributes']['class'][] = 'justify-content-center';
 }
 
 function kira_sass_preprocess_form_element (array &$variables) {
@@ -88,12 +94,3 @@ function kira_sass_preprocess_image(&$variables) {
 }
 
 
-
-/**
- * Adds img-fluid tags where needed.
-
-function kira_sass_preprocess_image(&$variables) {
-
-    $variables['attributes']['class'][] = 'img-fluid';
-	}
-*/

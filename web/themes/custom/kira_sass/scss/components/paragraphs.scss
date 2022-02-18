@@ -22,4 +22,7 @@
   @include media-breakpoint-only(sm) {
     margin-top: 2em;
   }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 2em;
+  }
 }
