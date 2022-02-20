@@ -2,7 +2,9 @@
 # added via github to try to get windows to see it
 
 # Ignore configuration files that may contain sensitive information
-# added middle line to make sure it really does pick up the main settings.php file
+# added middle line to make sure it really does pick up the main 
+# added last three lines for clean transfers between servers
+settings.php file
 web/sites/*/*settings*.php
 web/sites/default/*settings*.php
 web/sites/*/*services*.yml
