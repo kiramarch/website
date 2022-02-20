@@ -9698,17 +9698,18 @@ h3 {
 
 @media (max-width: 575.98px) {
   .paragraph--type--illustration-primary {
-    max-width: 150px;
+    max-width: 100px;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .paragraph--type--illustration-primary {
-    margin-top: 2em;
+    margin-top: 1em;
   }
 }
 @media (min-width: 768px) {
   .paragraph--type--illustration-primary {
-    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 
