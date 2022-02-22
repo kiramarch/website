@@ -23,7 +23,13 @@
     margin-top: 1em;
   }
   @include media-breakpoint-up(md) {
-    margin-top: 1em;
+    margin-top: 1.25em;
 	margin-bottom: 1em;
   }
+}
+
+/* SECTION -- across paragraph types */
+
+.paragraph--type--section {
+  margin-bottom: 1em;
 }

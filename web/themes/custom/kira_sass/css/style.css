@@ -9708,18 +9708,77 @@ h3 {
 }
 @media (min-width: 768px) {
   .paragraph--type--illustration-primary {
-    margin-top: 1em;
+    margin-top: 1.25em;
     margin-bottom: 1em;
   }
 }
 
-/* Visual styles that can be used in many places*/
-/* Fancy links */
-/*
-a.primary {
-  background: url('/themes/custom/kira_sass/templates/rt-teal.svg') right center no-repeat;
+/* SECTION -- across paragraph types */
+.paragraph--type--section {
+  margin-bottom: 1em;
 }
 
+/* Visual styles that can be used in many places*/
+/* FANCY LINKS */
+a.accent1, a.accent2, a.primary {
+  position: relative;
+  color: #343a40;
+  font-weight: 600;
+  background-size: 1em 1em;
+  padding-right: 1.15em;
+  transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
+}
+
+a.accent1:hover, a.accent2:hover, a.primary:hover {
+  font-weight: 800;
+  text-decoration: none;
+}
+
+a.accent1::before, a.accent2::before, a.primary::before {
+  content: "";
+  position: absolute;
+  left: 70%;
+  bottom: -0.3em;
+  width: 5em;
+  height: 0.5em;
+  transform: skew(-30deg) translateX(-50%);
+  transition: height 0.2s cubic-bezier(0.33, 0.66, 0.66, 1), width 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+  z-index: -1;
+}
+
+a.primary:hover::before, a.accent1:hover::before, a.accent2:hover::before {
+  height: 1.7em;
+  width: 110%;
+  left: 50%;
+  border-radius: 0.5em;
+  transform: skew(-30deg) translateX(-50%);
+}
+
+a.primary {
+  background: url("/themes/custom/kira_sass/templates/arrow-teal.svg") right 55% no-repeat;
+}
+
+a.accent1 {
+  background: url("/themes/custom/kira_sass/templates/arrow-brick.svg") right 55% no-repeat;
+}
+
+a.accent2 {
+  background: url("/themes/custom/kira_sass/templates/arrow-orange.svg") right 55% no-repeat;
+}
+
+a.accent1::before {
+  background: #ffd6cc;
+}
+
+a.accent2::before {
+  background: #ffeacc;
+}
+
+a.primary::before {
+  background: #e8f9f7;
+}
+
+/*
 a.primary::after {
   content: '';
   position: absolute;
@@ -9730,22 +9789,6 @@ a.primary::after {
   background: $primary-light;
   z-index: -1;
   transition: height .25s cubic-bezier(.6, 0, .4, 1);
-}
-
-a.accent1 {
-  background: url('/themes/custom/kira_sass/templates/rt-brick.svg') right center no-repeat;
-}
-
-a.accent2 {
-  background: url('/themes/custom/kira_sass/templates/rt-orange.svg') right center no-repeat;
-}
-*/
-/* a.accent1, a.accent2, a.primary {
-  position: absolute;
-  color: $body-color;
-  background-size: 0.9em 0.9em;
-  padding-right: 1.1em;
-  font-weight: 600;
 }
 */
 /* a.accent1:active, a.accent2:active, a.primary:active,
