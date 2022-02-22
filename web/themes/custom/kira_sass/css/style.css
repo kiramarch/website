@@ -4364,15 +4364,21 @@ li.dropdown-item:focus, li.dropdown-item:active {
   }
   .navbar-light #Work-rt {
     visibility: hidden;
+    fill: #fff;
+    transition: fill 0.4s cubic-bezier(0.33, 0.66, 0.66, 1);
     transform: translate(-105px, 75px) rotate(-20deg) scale(1.1);
   }
   .navbar-light #Play-rt {
     visibility: hidden;
     transform: translate(-5px, -6px);
+    fill: #fff;
+    transition: fill 0.4s cubic-bezier(0.33, 0.66, 0.66, 1);
   }
   .navbar-light #Create-rt {
     visibility: hidden;
     transform: rotate(5deg) translate(-30px, -80px) scale(1.25);
+    fill: #fff;
+    transition: fill 0.4s cubic-bezier(0.33, 0.66, 0.66, 1);
   }
   .navbar-light li:nth-child(1).active #Work-rt {
     fill: #066661;
@@ -9738,11 +9744,11 @@ a.accent1::before, a.accent2::before, a.primary::before {
   content: "";
   position: absolute;
   left: 70%;
-  bottom: -0.3em;
+  bottom: -0.2em;
   width: 5em;
   height: 0.5em;
   transform: skew(-30deg) translateX(-50%);
-  transition: height 0.2s cubic-bezier(0.33, 0.66, 0.66, 1), width 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transition: height 0.2s cubic-bezier(0.33, 0.66, 0.66, 1);
   z-index: -1;
 }
 
