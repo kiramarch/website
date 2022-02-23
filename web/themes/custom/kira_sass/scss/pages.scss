@@ -10,3 +10,16 @@
   article.node--type-simple-page {
   max-width: 720px;}
 }
+
+article.node--type-simple-page a:not([class]) {
+  position: relative;
+  color: $gray-800;
+  padding: 0.2em 0.25em 0.2em 0.25em;
+  text-decoration: none;
+  background-color: $primary-light;
+}
+
+article.node--type-simple-page a:not([class]):hover {
+  text-decoration: none;
+  font-weight: 600;
+}

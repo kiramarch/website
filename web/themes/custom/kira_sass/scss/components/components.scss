@@ -11,6 +11,16 @@ a.accent1, a.accent2, a.primary {
   transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
+
+a.accent1::after, a.accent2::after, a.primary::after {
+    content: '';
+    position: absolute;
+    top: -1.1em;
+    left: -1.5em;
+    width: 120%;
+    height: 250%;
+}
+
 a.accent1:hover, a.accent2:hover, a.primary:hover {
   font-weight: 800;
   text-decoration: none;
@@ -24,7 +34,7 @@ a.accent1::before, a.accent2::before, a.primary::before {
     width: 5em;
     height: .5em;
     transform: skew(-30deg) translateX(-50%);
-    transition: height .2s cubic-bezier(0.33, 0.66, 0.66, 1);
+    transition: height 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
     z-index: -1;
 }
 
@@ -34,6 +44,8 @@ a.primary:hover::before, a.accent1:hover::before, a.accent2:hover::before {
 	left: 50%;
 	border-radius: .5em;
 	transform: skew(-30deg) translateX(-50%);
+	transition-delay: 0.1s;
+	transition-duration: 0.3s;
 }
 
 a.primary {
