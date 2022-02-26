@@ -72,25 +72,3 @@ a.primary::before {
     background: $primary-light;
 }
 
-
-/*
-a.primary::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0.07em;
-  height: 0.1em;
-  width: 100%;
-  background: $primary-light;
-  z-index: -1;
-  transition: height .25s cubic-bezier(.6, 0, .4, 1);
-}
-*/
-
-/* a.accent1:active, a.accent2:active, a.primary:active,
-a.accent1:focus, a.accent2:focus, a.primary:focus,
-a.accent1:hover, a.accent2:hover, a.primary:hover {
-  color: $body-color;
-  font-weight: 800;
-}
-*/
