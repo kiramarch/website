@@ -43,6 +43,17 @@ function kira_sass_preprocess_node__simple_page__full(array &$variables) {
   //for simple page, add classes to article tag to control width
   $variables['attributes']['class'][] = 'container';
   $variables['attributes']['class'][] = 'justify-content-center';
+
+
+  // get section and add it to article class
+  $node = $variables['node'];
+
+  if ($node->hasField('field_site_section') && !$node->get('field_site_section')->isEmpty()) {
+    // Get the value of the field.
+    $field_value = $node->get('field_site_section')->get(0)->getValue();
+    // Add the class to the entity as an attribute.
+    $variables['attributes']['class'][] = 'section-'.$field_value['value'];
+  }
 }
 
 function kira_sass_preprocess_form_element (array &$variables) {
