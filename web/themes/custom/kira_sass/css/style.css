@@ -9698,6 +9698,16 @@ h3 {
     max-width: 720px;
   }
 }
+article.node--type-simple-page.section-play a:not([class]) {
+  color: #801900;
+  background-image: linear-gradient(#ffd6cc, #ffd6cc);
+}
+
+article.node--type-simple-page.section-create a:not([class]) {
+  color: #cc7700;
+  background-image: linear-gradient(#ffeacc, #ffeacc);
+}
+
 article.node--type-simple-page a:not([class]) {
   color: #066661;
   padding: 0.2em 0.25em 0.2em 0.25em;

@@ -11,6 +11,16 @@
   max-width: 720px;}
 }
 
+//set link colors by section; work and default are primary color
+article.node--type-simple-page.section-play a:not([class]) {
+  color: $accent-dark;
+  background-image: linear-gradient($accent-light, $accent-light)
+}
+
+article.node--type-simple-page.section-create a:not([class]) {
+  color: $accent2-dark;
+  background-image: linear-gradient($accent2-light, $accent2-light)
+}
 
 article.node--type-simple-page a:not([class]) {
   color: $primary-dark;
