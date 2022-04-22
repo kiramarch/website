@@ -36,20 +36,13 @@ p, li {
     }
 
 
-
-
 /* GENERAL COLORS
 --------------------------------------------------*/
 
 a {
-	color: $primary-dark;
+  color: $primary-dark;
 }
 
-/*
-a:hover {
-	text-decoration: none;
-}
-*/
 
 .bg-inverse {
     background: $primary-shade !important;

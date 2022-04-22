@@ -6,38 +6,17 @@
 
 /* SIMPLE PAGE */
 
+// limit width for ease of reading
 @include media-breakpoint-up(lg) {
   article.node--type-simple-page {
   max-width: 720px;}
 }
 
-//set link colors by section; work and default are primary color
-article.node--type-simple-page.section-play a:not([class]) {
+//customize link color by section
+article.node--type-simple-page.section-play a {
   color: $accent-dark;
-  background-image: linear-gradient($accent-light, $accent-light)
 }
 
-article.node--type-simple-page.section-create a:not([class]) {
+article.node--type-simple-page.section-create a {
   color: $accent2-dark;
-  background-image: linear-gradient($accent2-light, $accent2-light)
-}
-
-article.node--type-simple-page a:not([class]) {
-  color: $primary-dark;
-  padding: 0.2em 0.25em 0.2em 0.25em;
-  text-decoration: none;
-  overflow: hidden;
-  background-image: linear-gradient($primary-light, $primary-light);
-  background-size: 95% 0.7em;
-  background-position: 0.5em 100%;
-  background-repeat: no-repeat;
-  transition: 0.35s cubic-bezier(0.25, 0.1, .1, 1.3);
-  
-  &:hover {
-    //font-weight: 600;
-	text-shadow: 0 0 0.02em $primary-dark;
-	background-size: 100% 95%;
-    background-position: 0 0;
-   }
-
 }

@@ -1,8 +1,10 @@
 /* Visual styles that can be used in many places*/
 
-/* FANCY LINKS */
+/////* *****LINKS***** */////
 
-a.accent1, a.accent2, a.primary {
+///* Fancy Arrow Links *///
+
+a.accent1-arrow, a.accent2-arrow, a.primary-arrow {
   position: relative;
   color: $body-color;
   font-weight: 600;
@@ -12,7 +14,7 @@ a.accent1, a.accent2, a.primary {
 }
 
 
-a.accent1::after, a.accent2::after, a.primary::after {
+a.accent1-arrow::after, a.accent2-arrow::after, a.primary-arrow::after {
     content: '';
     position: absolute;
     top: -1.1em;
@@ -21,12 +23,12 @@ a.accent1::after, a.accent2::after, a.primary::after {
     height: 250%;
 }
 
-a.accent1:hover, a.accent2:hover, a.primary:hover {
+a.accent1-arrow:hover, a.accent2-arrow:hover, a.primary-arrow:hover {
   font-weight: 800;
   text-decoration: none;
 }
 
-a.accent1::before, a.accent2::before, a.primary::before {
+a.accent1-arrow::before, a.accent2-arrow::before, a.primary-arrow::before {
     content: "";
     position: absolute;
     left: 70%;
@@ -38,7 +40,7 @@ a.accent1::before, a.accent2::before, a.primary::before {
     z-index: -1;
 }
 
-a.primary:hover::before, a.accent1:hover::before, a.accent2:hover::before {
+a.primary-arrow:hover::before, a.accent1-arrow:hover::before, a.accent2-arrow:hover::before {
     height: 1.7em;
 	width: 110%;
 	left: 50%;
@@ -48,27 +50,79 @@ a.primary:hover::before, a.accent1:hover::before, a.accent2:hover::before {
 	transition-duration: 0.3s;
 }
 
-a.primary {
+a.primary-arrow {
   background: url('/themes/custom/kira_sass/templates/arrow-teal.svg') right 55% no-repeat;
 }
 
-a.accent1 {
+a.accent1-arrow {
   background: url('/themes/custom/kira_sass/templates/arrow-brick.svg') right 55% no-repeat;
 }
 
-a.accent2 {
+a.accent2-arrow {
   background: url('/themes/custom/kira_sass/templates/arrow-orange.svg') right 55% no-repeat;
 }
 
-a.accent1::before {
+a.accent1-arrow::before {
     background: $accent-light;
 }
 
-a.accent2::before {
+a.accent2-arrow::before {
     background: $accent2-light;
 }
 
-a.primary::before {
+a.primary-arrow::before {
     background: $primary-light;
 }
+
+
+///* Fancy Text Highlight Links *///
+// Color by section on simple article pages, default is primary color
+
+article.node--type-simple-page.section-play a.highlight {
+  color: $accent-dark;
+  background-image: linear-gradient($accent-light, $accent-light)
+}
+
+article.node--type-simple-page.section-create a.highlight {
+  color: $accent2-dark;
+  background-image: linear-gradient($accent2-light, $accent2-light)
+}
+
+a.highlight {
+  padding: 0.2em 0.25em 0.2em 0.25em;
+  background-image: linear-gradient($primary-light, $primary-light);
+  text-decoration: none;
+  //overflow: hidden;
+  background-image: linear-gradient($primary-light, $primary-light);
+  background-size: 95% 0.7em;
+  background-position: 0.5em 100%;
+  background-repeat: no-repeat;
+  transition: 0.35s cubic-bezier(0.25, 0.1, .1, 1.3);
+  
+  &:hover {
+    //font-weight: 600;
+	text-shadow: 0 0 0.02em $primary-dark;
+	background-size: 100% 95%;
+    background-position: 0 0.1em;
+   }
+}
+
+/////* *****CARDS***** */////
+
+///* RT background, text only *///
+// Color by section on simple article pages, default is primary color
+
+article.node--type-simple-page.section-play .card-rt {
+  $bg-rt: svg-fill($rt-svg, $accent-light);
+}
+
+article.node--type-simple-page.section-create .card-rt {
+  $bg-rt: svg-fill($rt-svg, $accent2-light);
+}
+
+.card-rt{
+  $bg-rt: svg-fill($rt-svg, $primary-light);
+  background: url('data:image/svg+xml;utf8,#{$bg-rt}') center center no-repeat;
+}
+
 
