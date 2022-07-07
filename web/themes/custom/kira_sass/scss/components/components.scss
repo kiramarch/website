@@ -112,17 +112,17 @@ a.highlight {
 ///* RT background, text only *///
 // Color by section on simple article pages, default is primary color
 
-article.node--type-simple-page.section-play .card-rt {
-  $bg-rt: svg-fill($rt-svg, $accent-light);
-}
+//article.node--type-simple-page.section-play .card-rt {
+//  $bg-rt: svg-fill($rt-svg, $accent-light);
+//}
 
-article.node--type-simple-page.section-create .card-rt {
-  $bg-rt: svg-fill($rt-svg, $accent2-light);
-}
+//article.node--type-simple-page.section-create .card-rt {
+//  $bg-rt: svg-fill($rt-svg, $accent2-light);
+//}
 
-.card-rt{
-  $bg-rt: svg-fill($rt-svg, $primary-light);
-  background: url('data:image/svg+xml;utf8,#{$bg-rt}') center center no-repeat;
-}
+//.card-rt{
+//  $bg-rt: svg-fill($rt-svg, $primary-light);
+//  background: url('data:image/svg+xml;utf8,#{$bg-rt}') center center no-repeat;
+//}
 
 

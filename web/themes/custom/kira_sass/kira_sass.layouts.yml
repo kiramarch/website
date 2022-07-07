@@ -13,3 +13,41 @@ kira_col-3-6-3-resp:
       label: Second
     third:
       label: Third
+kira_col2-3-9:
+  label: 2 Columns 3 and 9
+  category: Barrio Columns
+  path: layouts
+  template: col2-3-9
+  default_region: first
+  icon_map:
+    - [top]
+    - [first, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom
+kira_col2-9-3:
+  label: 2 Columns 9 and 3
+  category: Barrio Columns
+  path: layouts
+  template: col2-9-3
+  default_region: first
+  icon_map:
+    - [top]
+    - [first, second]
+    - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First
+    second:
+      label: Second
+    bottom:
+      label: Bottom
