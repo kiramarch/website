@@ -9768,12 +9768,12 @@ a.accent1-arrow:hover, a.accent2-arrow:hover, a.primary-arrow:hover {
 a.accent1-arrow::before, a.accent2-arrow::before, a.primary-arrow::before {
   content: "";
   position: absolute;
-  left: 70%;
+  left: 0;
   bottom: -0.2em;
-  width: 5em;
+  width: 100%;
   height: 0.5em;
-  transform: skew(-30deg) translateX(-50%);
-  transition: height 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+  transform: skew(-30deg) translateX(-5%);
+  transition: 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
   z-index: -1;
 }
 
